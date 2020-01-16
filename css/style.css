@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.prodotto {
+    display: inline-block;
+    position: relative;
+}
+
+.prodotto img {
+    width: 200px;
+    height: 250px;
+    object-fit: contain;
+}
+
+.sconto {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: green;
+}
+
+.sconto1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: red;
+}
+
+.cuore {
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    left: 0;
+    bottom: 7px;
+    width: 100%;
+    display: none;
+}
+
+.prodotto:hover .cuore {
+    display: block;
+}
+
+.prodotto:hover .cuore:hover{
+    color: red;
+}
